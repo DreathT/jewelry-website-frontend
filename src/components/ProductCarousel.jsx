@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import ProductCard from "./ProductCard";
 import { getAllProducts } from "../apis/product";
 import { Box, IconButton, useTheme, useMediaQuery } from "@mui/material";
@@ -6,7 +6,7 @@ import { ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material";
 
 const ProductCarousel = () => {
   const [products, setProducts] = useState([]);
-  const scrollContainerRef = React.useRef(null);
+  const scrollContainerRef = useRef(null);
 
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
