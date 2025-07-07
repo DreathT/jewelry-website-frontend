@@ -32,7 +32,26 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url('/public/fonts/avenir/Avenir-Book.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Montserat-Regular';
+  src: url('/public/fonts/montserat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Montserat-Medium';
+  src: url('/public/fonts/montserat/Montserrat-Medium.otf') format('truetype');
+  font-weight: normal;
 }
